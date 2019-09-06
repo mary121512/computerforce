@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="registration.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="Mary Grace Nabua">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Registration Form</title>
+    </head>
+<body>
+    <div class="main">
+        <header>Registration Form</header><br>
+        <h4 style="text-align: center;color: dimgray;padding: 5px;">Please complete the following form to register for an account on our website.</h4>
+        <form action=""method="post"id="form-box">
+            <label for="username"style="font-weight: 600;">Username*</label>
+            <div class="inp-row"> 
+                <input type="text" name="username" class="inp" placeholder="Enter your username" required>
+            </div>
+            <label for="email"style="font-weight: 600;">Email Address*</label>
+            <div class="inp-row">
+                <input type="email" name="email" class="inp" placeholder="user_email@mailc.com" required>
+            </div>
+            <label for="password"style="font-weight: 600;">Password*</label>
+            <div class="inp-row">
+                <input type="password" name="pass" class="inp" placeholder="Enter your password" required>
+            </div>
+            <label for="repass"style="font-weight: 600;">Confirm Password*</label>
+            <div class="inp-row">
+                <input type="password" name="repass" class="inp" placeholder="Confirm your password" required>
+            </div>
+            <label for="fname"style="font-weight: 600;">First Name*</label>
+            <div class="inp-row">
+                <input type="text" name="fname" class="inp" placeholder="Enter your First name" required>
+            </div>
+            <label for="sname"style="font-weight: 600;">Surname*</label>
+            <div class="inp-row">
+                <input type="text" name="sname" class="inp" placeholder="Enter your Surname" required>
+            </div>
+            <label for="gender" style="font-weight: 600;">Gender:</label>
+                    <div class="inp-row">
+                        <input type="radio" id="Fmale" name="name" value="female" checked>
+                        <label for="fmale">Female</label>
+                    <input type="radio" id="male" name="name" value="male">
+                        <label for="male">Male</label>
+                    <input type="radio" id="others" name="name" value="others">
+                        <label for="others">Others</label>
+            </div>
+            <label for="gender" style="font-weight: 600;">Date of Birth*</label>
+                    <div class="inp-row">
+                    <input type="date" name="Bdate" class="inp" required>
+            </div>
+                    <label for="address" style="font-weight: 600;">Address*</label>
+                    <div class="inp-row">
+                    <input type="name" name="Add" class="inp" placeholder="Enter your address" required>
+            </div>
+            <label for="suburb" style="font-weight: 600;">Suburb*</label><br>
+            <div class="inp-row">
+                    <input type="text" name="Sub" class="inp" placeholder="Enter your Suburb" required>
+            </div>
+                <label for="postcode" style="font-weight: 600;">Postcode*</label><div class="inp-row">
+                    <input type="number" name="Pcode" class="inp" maxlength="4" placeholder="Enter your postcode" required>
+            </div>
+                <label for="state" style="font-weight: 600;">State*</label><br>
+            <div class="inp-row">
+                    <select class="inp" required>
+                        <option value="">Select State</option>
+                        <option value="act">Australian Capital Teritory</option>
+                        <option value="nsw">New South Wale</option>
+                        <option value="nt">Northern Teritory</option>
+                        <option value="qa">Queensland</option>
+                        <option value="sa">Southern Australia</option>
+                        <option value="tas">Tasmania</option>
+                        <option value="vic">Victoria</option>
+                        <option value="wa">Western Australia</option>
+                    </select>
+            </div>
+            <label for="phone" style="font-weight: 600;">Phone Number</label><br>
+            <div class="inp-row">
+                    <input type="text" name="Pnum" id="ph" value="+61"disabled>
+                    <input type="number" name ="Pnum" id="num" maxlength="9" placeholder="Enter your phone number" required>
+                </div>
+            <div class="inp-row">
+                <input type="checkbox" class="agree"><label for="agree"> I agree with the terms and conditions</label>
+            </div>
+                <input type="submit" name="submit" class="sub-btn" value="Register">
+                <input type="button" onclick="myFunction()" class="sub-btn" value="Clear" id="clr">
+                <a href="main.html">
+                    <input type="button" name="submit" class="sub-btn" value="Cancel Registration">
+                </a>
+            </form>
+            
+    </div>
+    
+<script>
+function myFunction() {
+  document.getElementById("form-box").reset();
+}
+</script>
+    
+    </body>
+</html>
